@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta  charset="UTF-8">
+  <title>CRUDS</title>
+  <link rel="stylesheet" href="style.css">
+		
+</head>
+<body>
+  <div class="container">
+    <div class="head">
+      
+        <h1>indvdl eco</h1>
+      <p>The first project to monitor the monthely economy</p>
+      
+    </div>
+    <div class="inputs">
+      <div class="dateInputs">
+        <input type="number" placeholder="day" id="day" name="day">
+        <input type="number" id="month" placeholder="month" name="month">
+        <input type="number" placeholder="year" id="year" name="year">
+      </div>
+      <div class="C">
+        <input onkeyup="s()" type="number" id="ipt" placeholder="inpt DA">
+        <input onkeyup="s()" type="number" id="opt" placeholder="otpt DA">
+        <input onkeyup="s()" type="number" id="adt" placeholder="adt DA">
+        <small id="total">000</small>
+      </div>
+      <input type="text" id="status" placeholder="status">
+      <button id="submit">Create</button>
+    </div>
+    <div class="outputs">
+      <div class="searchblock" >
+        <input type="text" id="searsh" onkeyup="searshdt(this.value)" placeholder="searsh by day">
+        <div class="btnsearsh" >
+          <button onclick="sersh(this.id)" id="searshday">s b d</button>
+          <button onclick="sersh(this.id)" id="searshmonth">s b m</button>
+          <button onclick="sersh(this.id)" id="searshyear">s b y</button>
+          <button onclick="sersh(this.id)" id="searshtotal">s b t</button>
+        </div>
+    </div>
+    <div id="clearAll">
+      
+    </div>
+    <div class="emptyTable">
+      <p>No data available</p>
+    </div>
+      <table>
+        <tr>
+          <th>N:</th>
+          <th>day</th>
+          <th>month</th>
+          <th>year</th>
+          <th>total</th>
+          <th>status</th>
+          <th>update</th>
+          <th>delete</th>
+        </tr>
+        <tbody id="tbod">
+        </tbody>
+      </table>
+  </div>
+  <div class="total">
+    <small class="totalAmount">0</small>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

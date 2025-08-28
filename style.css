@@ -1,0 +1,191 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.inputs , .outputs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+p{
+  font-size: 22px;
+}
+h1{
+  font-size: 40px;
+}
+::placeholder{
+  font-size: 18px;
+}
+.dateInputs{
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+}
+body{
+  background: #333;
+  color: #5ff1de;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-family: monospace;
+}
+.container{
+  width: 86%;
+  margin:auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.head{
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0;
+  padding: 10px 0;
+}
+input{
+  width: 100%;
+  height: 25px;
+  background: #222;
+  margin:10px 0;
+  border-radius: 15px;
+  padding: 4px;
+  color: turquoise;
+  border: none;
+  outline: none;
+}
+input:focus{
+  background: #112;
+  border: rgba(199, 233, 132, 0.932) 2px double ;
+}
+.dateInputs input{
+  width:31.5%;
+}
+.C{
+  width:100%;
+}
+.C input{
+  width:23%;
+}
+#total{
+  padding:  6px ;
+  font-size: 21px;
+  border-radius: 10px;
+}
+#total::before{
+  content: 'TOTAL:';
+  color: white;
+}
+#total::after{
+  content: ' DA ';
+  color:#65a8ff;
+}
+button{
+  width: 75%;
+  height: 30px;
+  border: aqua;
+  cursor: pointer;
+  background: black;
+  color: whitesmoke;
+  border-radius: 20px;
+  transition: 0.5s;
+  
+}
+button:hover{
+  background: blue;
+  color: yellow;
+  font-size: 22px;
+  letter-spacing: 3px;
+}
+.emptyTable{
+  width:100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+.searchblock{
+  width:100%;
+}
+.btnsearsh{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+table{
+  text-align: center;
+  margin:auto ;
+  padding: 10px ;
+  color: aqua;
+  font-size: 30px;
+  background: rgb(0, 0, 0);
+}
+table th{
+  text-transform: uppercase;
+  color: brown;
+  margin: auto;
+  background: darkgray;
+}
+th,td{
+  padding: 6px;
+  margin: auto;
+}
+td button{
+  width:90%;
+  margin: auto;
+  padding: 5px;
+}
+td{
+  background: lightskyblue;
+  color: mintcream;
+}
+#clearAll button{
+  margin: 15px;
+  width: 95%;
+  font-size: xx-large;
+  color:red;
+  background-color: #40f;
+  padding: 10px ;
+  padding-bottom: 40px;
+  text-transform:uppercase ;
+  transform: all 0.5s ease-in-out;
+}
+#clearAll button:hover{
+  background: rgba(221, 17, 68, 0.815);
+  font-size: 33px;
+  color: #000;
+  font-size: 25px;
+}
+.total{
+  width: 100%;
+  height: 40px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+.totalAmount{
+  color:#fff;
+  font-size: 25px;
+  width: 60%;
+  padding: 30px 0;
+  display: flex;
+  background: #112;
+  border-radius: 20px 10px;
+  justify-content: center;
+  align-items: center;
+}
+.totalAmount::after{
+  content: ' DA';
+  color: rgb(0, 255, 13);
+  margin-left: 6px;
+}
+.totalAmount::before{
+  content: "all totals:";
+  color: gold;
+  text-transform:uppercase ;
+}
