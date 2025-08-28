@@ -12,10 +12,19 @@ let totalAmount=document.querySelector(`.totalAmount`);
 
 onload = function () {
     day.focus();
+    let table = this.document.querySelector("table");
+    let emptyTable = this.document.querySelector(".emptyTable");
+    if (array.length === 0) {
+        emptyTable.style.display = "flex";
+        table.style.display = "none";
+    } else {
+        emptyTable.style.display = "none";
+        table.style.display = "table";
+    }
 }
 
 let x;
-//for searshing (default search mode)
+//for searching (default search mode)
 let sm = `day`;
 // count the total dayling amount
 function ttl() {
